@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <VBox prefWidth="271.0">
+            <children>
+                <VBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <HBox alignment="CENTER" prefWidth="98.0">
+                                    <children>
+                                        <Label text="Status : "/>
+                                        <Label fx:id="statusLbl"/>
+                                    </children>
+                                </HBox>
+                                <Separator prefWidth="200.0"/>
+                                <VBox prefWidth="100.0">
+                                    <children>
+                                        <HBox prefWidth="366.0">
+                                            <children>
+                                                <Label text="Key"/>
+                                                <ChoiceBox fx:id="button1Selector" prefHeight="25.0" prefWidth="56.0"/>
+                                                <Label text="Delay (ms)"/>
+                                                <TextField fx:id="button1DelayTxT" prefHeight="25.0" prefWidth="53.0"
+                                                           text="1000"/>
+                                                <CheckBox fx:id="button1EnabledCheck" mnemonicParsing="false"
+                                                          text="Enabled"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox prefWidth="366.0">
+                                            <children>
+                                                <Label text="Key"/>
+                                                <ChoiceBox fx:id="button2Selector" prefHeight="25.0" prefWidth="56.0"/>
+                                                <Label text="Delay (ms)"/>
+                                                <TextField fx:id="button2DelayTxT" prefHeight="25.0" prefWidth="53.0"
+                                                           text="1000"/>
+                                                <CheckBox fx:id="button2EnabledCheck" mnemonicParsing="false"
+                                                          text="Enabled"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox prefWidth="366.0">
+                                            <children>
+                                                <Label text="Key"/>
+                                                <ChoiceBox fx:id="button3Selector" prefHeight="25.0" prefWidth="56.0"/>
+                                                <Label text="Delay (ms)"/>
+                                                <TextField fx:id="button3DelayTxT" prefHeight="25.0" prefWidth="53.0"
+                                                           text="1000"/>
+                                                <CheckBox fx:id="button3EnabledCheck" mnemonicParsing="false"
+                                                          text="Enabled"/>
+                                            </children>
+                                        </HBox>
+                                        <HBox prefWidth="366.0">
+                                            <children>
+                                                <Label text="Key"/>
+                                                <ChoiceBox fx:id="button4Selector" prefHeight="25.0" prefWidth="56.0"/>
+                                                <Label text="Delay (ms)"/>
+                                                <TextField fx:id="button4DelayTxT" prefHeight="25.0" prefWidth="53.0"
+                                                           text="1000"/>
+                                                <CheckBox fx:id="button4EnabledCheck" mnemonicParsing="false"
+                                                          text="Enabled"/>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <Separator prefWidth="200.0"/>
+                <VBox>
+                    <children>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" text="Settings"/>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="18.0" prefWidth="366.0">
+                            <children>
+                                <Label text="Start/Stop Key"/>
+                                <ChoiceBox fx:id="startstopBtn" prefHeight="25.0" prefWidth="56.0"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+</GridPane>
