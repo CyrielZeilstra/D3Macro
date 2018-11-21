@@ -1,4 +1,4 @@
-package sample;
+package Code;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("D3Macro");
-        primaryStage.setScene(new Scene(root, 300, 180));
+        primaryStage.setScene(new Scene(root, 300, 200));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

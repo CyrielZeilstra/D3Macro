@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="190.0" prefWidth="294.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Code.Controller">
+    <children>
+        <VBox prefHeight="190.0" prefWidth="285.0">
+            <children>
+                <VBox>
+                    <children>
+                        <VBox prefHeight="117.0" prefWidth="285.0">
+                            <children>
+                                <HBox alignment="CENTER" prefWidth="98.0">
+                                    <children>
+                                        <Label text="Status : ">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                                        <Label fx:id="statusLbl">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Label>
+                                    </children>
+                                </HBox>
+                                <Separator prefWidth="200.0" />
+                              <HBox alignment="CENTER">
+                                  <children>
+                                      <Label alignment="CENTER" contentDisplay="CENTER" text="Settings" />
+                                  </children>
+                              </HBox>
+                                <VBox prefHeight="125.0" prefWidth="279.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefWidth="366.0">
+                                            <children>
+                                                <Label text="Key">
+                                                    <padding>
+                                                        <Insets right="5.0" />
+                                                    </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="button1Selector" prefHeight="25.0" prefWidth="56.0" />
+                                                <Label text="Delay (ms)">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" right="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="button1DelayTxT" prefHeight="25.0" prefWidth="53.0" text="1000">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" right="5.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <CheckBox fx:id="button1EnabledCheck" mnemonicParsing="false" text="Enabled" />
+                                            </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefWidth="366.0">
+                                            <children>
+                                                <Label text="Key">
+                                                    <padding>
+                                                        <Insets right="5.0" />
+                                                    </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="button2Selector" prefHeight="25.0" prefWidth="56.0" />
+                                                <Label text="Delay (ms)">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" right="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="button2DelayTxT" prefHeight="25.0" prefWidth="53.0" text="1000">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" right="5.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <CheckBox fx:id="button2EnabledCheck" mnemonicParsing="false" text="Enabled" />
+                                            </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefWidth="366.0">
+                                            <children>
+                                                <Label text="Key">
+                                                    <padding>
+                                                        <Insets right="5.0" />
+                                                    </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="button3Selector" prefHeight="25.0" prefWidth="56.0" />
+                                                <Label text="Delay (ms)">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" right="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="button3DelayTxT" prefHeight="25.0" prefWidth="53.0" text="1000">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" right="5.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <CheckBox fx:id="button3EnabledCheck" mnemonicParsing="false" text="Enabled" />
+                                            </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefWidth="366.0">
+                                            <children>
+                                                <Label text="Key">
+                                                    <padding>
+                                                        <Insets right="5.0" />
+                                                    </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="button4Selector" prefHeight="25.0" prefWidth="56.0" />
+                                                <Label text="Delay (ms)">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" right="5.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="button4DelayTxT" prefHeight="25.0" prefWidth="53.0" text="1000">
+                                                    <HBox.margin>
+                                                        <Insets left="5.0" right="5.0" />
+                                                    </HBox.margin>
+                                                </TextField>
+                                                <CheckBox fx:id="button4EnabledCheck" mnemonicParsing="false" text="Enabled" />
+                                            </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <Separator />
+                <VBox>
+                    <children>
+                        <HBox alignment="CENTER" prefWidth="366.0">
+                            <children>
+                                <Label text="Start/Stop Key">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin></Label>
+                                <ChoiceBox fx:id="startstopBtn" prefHeight="25.0" prefWidth="56.0" />
+                            </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

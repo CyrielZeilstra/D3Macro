@@ -1,8 +1,7 @@
-package sample;
+package Code;
 
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.util.Random;
 
 public class keyPressWorker implements Runnable {

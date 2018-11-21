@@ -1,9 +1,4 @@
-package sample;
-
-import org.jnativehook.keyboard.NativeKeyEvent;
-
-import java.awt.*;
-import java.awt.event.KeyEvent;
+package Code;
 
 public class keyPressBot {
 

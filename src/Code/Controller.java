@@ -1,4 +1,4 @@
-package sample;
+package Code;
 
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -14,15 +14,20 @@ import org.jnativehook.GlobalScreen;
 import org.jnativehook.NativeHookException;
 import org.jnativehook.keyboard.NativeKeyEvent;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.io.File;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Controller {
+
+    String enabledMp3 = "resources/Enabled.mp3";
+    String disabledMp3 = "resources/Disabled.mp3";
 
     public Label statusLbl;
     public ChoiceBox startstopBtn;
@@ -56,14 +61,14 @@ public class Controller {
     public Controller() throws NativeHookException {
         GlobalScreen.registerNativeHook();
         GlobalScreen.addNativeKeyListener(new GlobalKeyListener(this));
-// Get the logger for "org.jnativehook" and set the level to warning.
+        // Get the logger for "org.jnativehook" and set the level to warning.
         Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
         logger.setLevel(Level.WARNING);
 
-// Don't forget to disable the parent handlers.
+        // Don't forget to disable the parent handlers.
         logger.setUseParentHandlers(false);
 
-        // populate keyCodes map
+        // Populate keyCodes map
         keyCodes.put("1", KeyEvent.VK_1);
         keyCodes.put("2", KeyEvent.VK_2);
         keyCodes.put("3", KeyEvent.VK_3);
@@ -80,7 +85,7 @@ public class Controller {
         keyCodes.put("F10", NativeKeyEvent.VC_F10);
         keyCodes.put("F11", NativeKeyEvent.VC_F11);
         keyCodes.put("F12", NativeKeyEvent.VC_F12);
-        keyCodes.put("`", NativeKeyEvent.VC_BACKQUOTE);
+        keyCodes.put("~", NativeKeyEvent.VC_BACKQUOTE);
         keyCodes.put("Q", NativeKeyEvent.VC_Q);
         keyCodes.put("W", NativeKeyEvent.VC_W);
         keyCodes.put("E", NativeKeyEvent.VC_E);
