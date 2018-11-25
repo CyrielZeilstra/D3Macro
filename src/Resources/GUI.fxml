@@ -137,6 +137,52 @@
                                     <Insets bottom="5.0" top="5.0" />
                                  </VBox.margin>
                                         </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="135.0" prefWidth="366.0">
+                                 <children>
+                                    <Label text="Left mouse">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label text="Delay (ms)">
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="leftClickDelayTxT" prefHeight="25.0" prefWidth="53.0" text="1000">
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <CheckBox fx:id="leftClickEnabledCheck" mnemonicParsing="false" text="Enabled" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="105.0" prefWidth="366.0">
+                                 <children>
+                                    <Label text="Right mouse">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label text="Delay (ms)">
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="rightClickDelayTxT" prefHeight="25.0" prefWidth="53.0" text="1000">
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <CheckBox fx:id="rightClickEnabledCheck" mnemonicParsing="false" text="Enabled" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </HBox>
                                     </children>
                                 </VBox>
                             </children>

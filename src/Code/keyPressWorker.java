@@ -34,9 +34,9 @@ public class keyPressWorker implements Runnable {
             e.printStackTrace();
         }
         while (enabled) {
-            robot.delay(rand.nextInt((200 - 10) + 1) + 10);
+//            robot.delay(rand.nextInt((200 - 10) + 1) + 10);
             robot.keyPress(keyToPress);
-            robot.delay(rand.nextInt((200 - 10) + 1) + 10);
+//            robot.delay(rand.nextInt((200 - 10) + 1) + 10);
             robot.keyRelease(keyToPress);
             robot.delay(delay);
         }

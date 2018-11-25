@@ -8,6 +8,9 @@ public class keyPressBot {
     keyPressWorker worker3;
     keyPressWorker worker4;
 
+    mousePressWorker rightMouseWorker;
+    mousePressWorker leftMouseWorker;
+
     public keyPressBot(Controller c) {
         this.c = c;
     }
@@ -40,6 +43,20 @@ public class keyPressBot {
             Thread t4 = new Thread(worker4);
             t4.start();
         }
+
+        if (c.getLeftClickEnabledCheck().isSelected()) {
+            leftMouseWorker = new mousePressWorker(0, Integer.parseInt(c.getLeftClickDelayTxT().getText()));
+            leftMouseWorker.start();
+            Thread m2 = new Thread(leftMouseWorker);
+            m2.start();
+        }
+
+        if (c.getRightClickEnabledCheck().isSelected()) {
+            rightMouseWorker = new mousePressWorker(1, Integer.parseInt(c.getRightClickDelayTxT().getText()));
+            rightMouseWorker.start();
+            Thread m1 = new Thread(rightMouseWorker);
+            m1.start();
+        }
     }
 
     public void stop() {
@@ -55,6 +72,14 @@ public class keyPressBot {
         }
         if (c.getButton4EnabledCheck().isSelected()) {
             worker4.stop();
+        }
+
+        if (c.getRightClickEnabledCheck().isSelected()) {
+            rightMouseWorker.stop();
+        }
+
+        if (c.getLeftClickEnabledCheck().isSelected()) {
+            leftMouseWorker.stop();
         }
     }
 
